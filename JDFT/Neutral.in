@@ -1,0 +1,9 @@
+#Save the following to Neutral.in
+ionic-minimize nIterations 20
+include C.lattice
+include C.ionpos
+include common.in
+electronic-SCF
+density-of-states Total     #Output total density-of-states
+elec-n-bands 200             #Si has 4 occupied bands; asking for 6 unoccupied bands
+converge-empty-states yes   #Make sure that empty state eigenvalues are reliable

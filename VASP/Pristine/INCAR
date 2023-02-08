@@ -1,0 +1,44 @@
+SYSTEM=Pristine Graphene
+
+#Electronic
+PREC = Accurate
+SIGMA=0.1
+ENCUT=520
+LREAL=FALSE
+LASPH=.FALSE.
+NELMIN=5
+NELM=100
+EDIFF = 1E-5
+
+ISYM = 0
+
+#vdw
+IVDW=12
+
+#Geometry
+#NSW=2000
+#EDIFFG=-0.01
+#IBRION=2
+#ISIF=2
+
+#Projections and DOS
+#NEDOS = 5000
+#EMIN = -7
+#EMAX = 1
+#LORBIT=10
+#NBANDS=360
+
+#Output
+LWAVE=.FALSE.
+LCHARG=.FALSE. 
+
+#Parallelisation
+#LPLANE=.TRUE.
+#LSCALU=.FALSE.
+NCORE=64
+#NPAR=4 
+#KPAR=16
+
+#IDIPOL = 3
+#LDIPOL = .TRUE.
+#LVHAR = .TRUE.

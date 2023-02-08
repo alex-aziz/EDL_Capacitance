@@ -1,0 +1,20 @@
+#Save the following to common.in:
+coulomb-interaction Slab 001
+coulomb-truncation-embed 0 0 0
+
+ion-species GBRV/$ID_pbe.uspp
+elec-cutoff 25 
+
+kpoint-folding 6 6 1
+elec-smearing Fermi 0.01
+
+van-der-waals  D3
+fluid LinearPCM
+fluid-solvent PC
+fluid-cation Na+ 1.
+fluid-anion Cl- 1.
+
+dump-name common.$VAR      #This will overwrite outputs from successive runs
+initial-state common.$VAR  #This will initialize from the preceding calculation
+dump End State BoundCharge
+
