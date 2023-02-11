@@ -1,0 +1,9 @@
+#Save the following to Neutral.in
+ionic-minimize nIterations 20
+include C.lattice
+include C.ionpos
+include common.in
+electronic-SCF
+density-of-states Total     
+elec-n-bands 200             
+converge-empty-states yes   
